@@ -2,17 +2,19 @@ package com.santander.fx.domain;
 
 public enum Event {
 
-    NewOrderSingle(EventCategory.TRADE),
+    TradeRequest(EventCategory.TRADE),
 
-    OrderCancelRequest(EventCategory.TRADE),
+    TradeExecuted(EventCategory.TRADE),
 
-    OrderRequest(EventCategory.TRADE),
-
-    OrderExecuted(EventCategory.TRADE),
+    TradeCancelRequest(EventCategory.TRADE),
 
     QuoteRequest(EventCategory.RFQ),
 
-    Quote(EventCategory.RFQ);
+    Quote(EventCategory.RFQ),
+
+    StreamQuoteRequest(EventCategory.ESP),
+
+    StreamQuote(EventCategory.RFQ);
 
     private final EventCategory type;
 

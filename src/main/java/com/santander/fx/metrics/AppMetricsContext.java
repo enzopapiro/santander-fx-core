@@ -20,7 +20,7 @@ public class AppMetricsContext {
         this.clock = clock;
     }
     public void stamp(Event event, CharSequence correlationId1){
-
+        // timestamp and publish event
     }
     void stamp(Event event, CharSequence correlationId1, CharSequence correlationId2){
 
