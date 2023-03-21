@@ -1,8 +1,10 @@
-package com.santander.fx.domain;
+package com.santander.fx.domain.ver1;
+
+import com.santander.fx.domain.EventCategory;
 
 public enum Event {
 
-    TradeRequest(1,EventCategory.TRADE),
+    TradeRequest(1, EventCategory.TRADE),
 
     TradeExecuted(2,EventCategory.TRADE),
 
