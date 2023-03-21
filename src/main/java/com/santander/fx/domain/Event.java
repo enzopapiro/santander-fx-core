@@ -2,24 +2,26 @@ package com.santander.fx.domain;
 
 public enum Event {
 
-    TradeRequest(EventCategory.TRADE),
+    TradeRequest(1,EventCategory.TRADE),
 
-    TradeExecuted(EventCategory.TRADE),
+    TradeExecuted(2,EventCategory.TRADE),
 
-    TradeCancelRequest(EventCategory.TRADE),
+    TradeCancelRequest(3,EventCategory.TRADE),
 
-    QuoteRequest(EventCategory.RFQ),
+    QuoteRequest(4, EventCategory.RFQ),
 
-    Quote(EventCategory.RFQ),
+    Quote(5, EventCategory.RFQ),
 
-    StreamQuoteRequest(EventCategory.ESP),
+    StreamQuoteRequest(6, EventCategory.ESP),
 
-    StreamQuote(EventCategory.RFQ);
+    StreamQuote(7, EventCategory.RFQ);
 
     private final EventCategory type;
+    private final int code;
 
-    Event(EventCategory type){
+    Event(int code,EventCategory type){
         this.type = type;
+        this.code = code;
     }
 
     boolean isOf(EventCategory type){

@@ -23,9 +23,9 @@ public class AppMetricsContext {
         // timestamp and publish event
     }
     void stamp(Event event, CharSequence correlationId1, CharSequence correlationId2){
-
+        // timestamp and publish event
     }
     void stamp(Event event, CharSequence correlationId1, CharSequence correlationId2, CharSequence correlationId3){
-
+        // timestamp and publish event
     }
 }
